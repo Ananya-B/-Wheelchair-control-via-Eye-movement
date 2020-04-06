@@ -1,0 +1,37 @@
+ CODE:
+void main()
+ {
+TRISC.F0=1;
+TRISC.F1=1;
+TRISD.F0=0;
+TRISD.F1=0;
+PORTD.F0=0;
+PORTD.F1=0;
+
+    while(1)
+    {
+if(PORTC.F0==0 && PORTC.F1==0)
+{
+PORTD.F0=0;
+PORTD.F1=0;
+}
+if(PORTC.F0==1 && PORTC.F1==1)
+{
+PORTD.F0=1;
+PORTD.F1=1;
+}
+if(PORTC.F0==1 && PORTC.F1==0)
+
+
+
+15
+PORTD.F0=1;
+PORTD.F1=0;
+}
+if(PORTC.F0==0 && PORTC.F1==1)
+{
+PORTD.F0=0;
+PORTD.F1=1;
+}
+}
+}
